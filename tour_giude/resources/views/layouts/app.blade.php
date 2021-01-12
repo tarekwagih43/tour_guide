@@ -23,16 +23,16 @@
                 <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about">about <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="about">about</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="services">services <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="services">services</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="contact">contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="contact">contact </a>
             </li>      
             <li class="nav-item active">
-                <a class="nav-link" href="admin">Admin <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="admin">Admin</a>
             </li>
 
             </ul>
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row center-xs center-sm center-md center-lg">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p>copyright &copy; 2017 | html - css </p>
+                    <p>copyright &copy; 2020 | Touring. CO </p>
                 </div>
             </div>
         </div>

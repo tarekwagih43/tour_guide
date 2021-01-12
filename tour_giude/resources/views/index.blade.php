@@ -9,11 +9,10 @@
 <section id="showcase">
    <div class="contianer">
       <div class="row center-xs center-sm center-lg middle-xs middle-sm middle-lg">
-         <div class="col-xs-10 col-ms-10 col-lg-10">
+         <div class="col-xs-12 col-ms-12 col-lg-12">
+            <img src="/images/slider-2.jpg" class="img-fluid slider-image" alt="Slider Image">
             <div class="slider-text">
-               <img src="/images/88.jpg" class="img-fluid" alt="Responsive image">
                <h1 class="display-1">welcom to our <span class="primery-text">touring company</span></h1>
-               <p>Pharaon</p>
             </div>
          </div>
       </div>

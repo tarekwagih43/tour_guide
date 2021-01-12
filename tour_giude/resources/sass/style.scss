@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Myfont;
+    src: url("/fonts/RagelliaMellinda.woff");
+}
+
 body {
     font-family: 'open-sans', sans-serif;
     font-size: 17px;
@@ -58,6 +63,7 @@ fa {
 }
 
 #features {
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
@@ -68,21 +74,30 @@ fa {
     }
 }
 
+.navbar-brand {
+        font-size: 2rem !important;
+        font-weight: 800;
+}
+
 #showcase {
     border-bottom: 1px solid #56a79a;
     margin-bottom: 30px;
-    background-repeat: no-repeat;
-    width: 100%;
     text-align: center;
-    height: 100%;
-    background-size: 100% 100%;
+
+    .slider-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+        filter: brightness(0.65);
+    }
 
     .row {
         height: 600px;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 75px;
         margin: 0;
         padding-bottom: 20px;
     }
@@ -99,6 +114,17 @@ fa {
         padding: 40px;
         opacity: 0.9px;
     }
+
+    .slider-text {
+        font-family: Myfont;
+        position: absolute;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        top: 50%;
+        color: whitesmoke;
+    }
+
 }
 
 #features {
