@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Touring. CO | @yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head> 
 <body>
@@ -23,16 +23,16 @@
                 <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about">about</a>
+                <a class="nav-link" href="/about">about</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="services">services</a>
+                <a class="nav-link" href="/services">services</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="contact">contact </a>
+                <a class="nav-link" href="/contact">contact </a>
             </li>      
             <li class="nav-item active">
-                <a class="nav-link" href="admin">Admin</a>
+                <a class="nav-link" href="/admin">Admin</a>
             </li>
 
             </ul>
