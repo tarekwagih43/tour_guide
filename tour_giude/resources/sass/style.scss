@@ -9,6 +9,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
 }
 
 fa {
@@ -67,16 +68,38 @@ fa {
     margin-bottom: 20px;
 }
 
-#info {
-    img {
-        max-height: 100%;
-        object-fit: cover;
+.fo-contact {
+    padding: 0px 15px;
+
+    h5 {
+        text-transform: capitalize;
+    }
+
+    ul {
+        margin-left: -40px;
+
+        li {
+            list-style-type: none;
+        }
     }
 }
 
+#info {
+    img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+ 
 .navbar-brand {
         font-size: 2rem !important;
         font-weight: 800;
+        color: #56a69a !important;
+}
+
+.navbar {
+    height: 100px;
 }
 
 #showcase {
@@ -148,11 +171,13 @@ fa {
 }
 
 #info {
-    background-color: #7f8c8d;
-    color: ‎ #fff;
+    margin: 50px 0px;
 
     #co-fu {
-        margin: 28px 0px;
+        text-transform: capitalize;
+        color: #000000;
+        margin: 20px 50px;
+
     }
 
     h2 {
@@ -169,17 +194,20 @@ fa {
     li {
         line-height: 2em;
         font-size: 20px;
+        color: #56a79a;
+
     }
 }
 
 #company {
-    background: #333;
-    color: #fff;
+    background: #e9ecef;
+    color: #000;
     padding: 10px 0;
 
     h4 {
+        color: #56a79a;
         text-transform: uppercase;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -205,6 +233,10 @@ fa {
 #mian-footer {
     background: #56a79a;
     color: #fff;
+
+    h5 {
+        margin: 10px;
+    }
 }
 
 #page {

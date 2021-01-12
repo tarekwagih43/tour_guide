@@ -5,6 +5,8 @@
 
 @section('content')
 
+
+
 <div class="container">
 <section id="showcase">
    <div class="contianer">
@@ -16,7 +18,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> 
 </section>
 
       <section id="features">
@@ -95,27 +97,6 @@
             </div>
 
       </section>
-      <section id="info">
-            <div class="contianer">
-               <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg ">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <img class="info-imge" src="images/images.jpg">
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div id="co-fu">
-                     <h2>core features</h2>
-                     <ul>
-                        <li><i class="fa fa-check">transportation department</i></li>
-                         <li><i class="fa fa-check">marketing department</i></li> 
-                         <li><i class="fa fa-check">aviation department</i></li>
-                          <li><i class="fa fa-check">tourism department</i></li>
-                         <li><i class="fa fa-check">hotel reservation</i></li> 
-                          <li><i class="fa fa-check">booked a flight</i></li>
-                     </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-      </section>
+
    </div>
 @endsection

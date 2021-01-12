@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'Page Title')
+
+@section('content')
 
 <h2>Admin Area</h2>
 
@@ -111,3 +116,4 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 
 
+@endsection
