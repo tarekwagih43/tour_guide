@@ -2,10 +2,7 @@
 
 @section('title', 'Page Title')
 
-
 @section('content')
-
-
 
 <div class="container">
 <section id="showcase">
@@ -99,4 +96,5 @@
       </section>
 
    </div>
+   
 @endsection

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Touring. CO | @yield('title')</title>
+    <title>Touring CO. | @yield('title')</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css">
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -12,7 +12,7 @@
 <body>
 <div class="container">    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Touring. CO</a>
+        <a class="navbar-brand" href="/">Touring CO.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
