@@ -1,98 +1,80 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Touring CO. | @yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-</head> 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
 <body>
-<div class="container">    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Touring CO.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto pull-right ustify-content-center">
-            <li class="nav-item active current">
-                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/about">about</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/services">services</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/contact">contact </a>
-            </li>      
-            <li class="nav-item active">
-                <a class="nav-link" href="/admin">Admin</a>
-            </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
 
-            </ul>
-
-        </div>
-    </nav>
-</div>
-   
-<main role="main">
-
- @yield('content')
- 
- <div class="container marketing">
-    <section id="company">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="fo-contact">
-                    <h4>contact Us</h4>
-                    <ul>
-                        <li><i class="fa fa-phone"> (617) 555-5555</i></li>
-                        <li><i class="fa fa-envelope"> hiaderkhalid94.hk@gmial.com</i></li>
-                        <li><i class="fa fa-map"> 400 mian st, Bosten Ma</i></li>
                     </ul>
-                    
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
                 </div>
             </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-                    <h4>About Us</h4>
-                    <p>lorem ipsem dolor sit amet, consectetur adipisicing elit .</p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-                    <h4>Newsletter</h4>
-                    <p>lorem ipsem dolor sit amet, consectetur adipisicing elit .</p>
-                    <form>
-                        <input type="text" name="emial" placeholder="enter your emial">
-                        <button type="submit" name="button">submit</button>
-                    </form>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-    </section>
-        <section id="mian-footer" align="center">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h5>copyright &copy; 2020 | Touring. CO </h5>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+        </nav>
 
-      <!-- /.container -->
-
-</main>
-<!-- Bootstrap core JavaScript ================================================= -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
 </body>
 </html>
