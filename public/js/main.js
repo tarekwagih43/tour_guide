@@ -120,7 +120,7 @@ function openTab(evt, cityName) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\tarek wagih\Documents\GitHub\tour_guide\tour_giude\resources\js\main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! C:\Users\tarek wagih\Documents\GitHub\tour_guide\resources\js\main.js */"./resources/js/main.js");
 
 
 /***/ })
